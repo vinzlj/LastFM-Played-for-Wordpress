@@ -1,23 +1,26 @@
 .lastfm {
-  font-size: 14px !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 200px;
 }
 .lastfm p {
   margin: 0;
   padding: 0;
-  line-height: 1.25;
+  line-height: 1.75;
   font-size: 10px;
   text-align: left;
 }
-.lastfm img {
-  border: 0.1px solid #000000;
+.lastfm .lastfm_user {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+.lastfm .user_picture img {
+  width: 75px;
+}
+.lastfm .lastfm_played {
 }
 .lastfm .cover {
   width: 100%;
   height: auto;
+  border: 1px solid #e0e0e0;
 }
 .lastfm a:link,
 .lastfm a:visited {
@@ -35,7 +38,6 @@
   display: flex;
 }
 .lastfm .lastfm_row_border {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   padding: 5px 0;
 }
 .lastfm .lastfm_row_border:last-child {
@@ -43,9 +45,7 @@
   margin-bottom: 0;
 }
 .lastfm .lastfm_col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+
 }
 .lastfm .lastfm_col_small {
   -webkit-box-flex: 0;
@@ -55,4 +55,18 @@
 }
 .lastfm .lastfm_col:first-child {
   margin-right: 10px;
+}
+.lastfm .now-scrobbling {
+  position: relative;
+  margin-left: 18px;
+}
+.lastfm .now-scrobbling:before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('eq_icon.gif');
+    width: 10px;
+    height: 10px;
 }
